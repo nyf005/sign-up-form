@@ -1,7 +1,6 @@
 :root {
     --left-size: 40vw;
     --right-size: 60vw;
-    --form-height: 35vh;
     --primary-color: #5eb458;
     --secondary-color: #0080cb;
 }
@@ -30,8 +29,8 @@ body {
     font-family: Poppins, sans-serif;
     font-size: clamp(14px, 1.1rem, 1.3rem);
     font-weight: normal;
+    line-height: 1.7rem;
 }
-
 
 .container {
     display: flex;
@@ -46,17 +45,25 @@ body {
     position: relative;
 }
 
+a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
 #banner, #credit {
     width: 100%;
+    background: rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center; 
     align-items: center;
 }
 
-
 #banner {
     height: 15vh;
-    background: rgba(0, 0, 0, .5);
     position: absolute;
     top: 15%;
     color: #fff;
@@ -66,31 +73,64 @@ body {
     position: absolute;
     bottom: 0;
     height: 5vh;
-    background: rgba(0, 0, 0, .5);
     color: #fff;
 }
+
 #banner img {
     width: 25%;
 }
 
-
 #right{
     width: var(--right-size);
-    background-color: rgba(0, 128, 203, .1);
+    background-color: rgba(238, 238, 238, .3);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#intro, form, #login {
-    padding: 10px 40px;
+#right a {
+    text-decoration: none;
+}
 
+#intro, #login {
+    padding: 10px 40px;
+}
+
+#intro {
+    text-align: justify;
+}
+
+figure {
+    border-left: 4px solid var(--primary-color);
+    margin: 10px 0;
+}
+
+blockquote {
+    padding: 8px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+blockquote p::before {
+    content: '\201c';
+    font-size: 50px;
+    display: block;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+figcaption {
+    font-weight: bold;
+    text-align: end;
+}
+
+figcaption::before {
+    content: "\2014\0020";
 }
 
 form {
     width: 100%;
-    height: var(--form-height);
     margin: 40px 0 0;
+    padding: 30px 40px;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
@@ -102,31 +142,70 @@ form {
 
 .form-row {
     display: flex;
-    gap: 40px;
+    gap: 10px;
 }
+
 label, input {
     display: block;
 }
 
 label {
-    color: #0080cb;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+label span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: red;
+}
+
+input, button {
+    outline: none;
 }
 
 input {
-    height: 30px;
-    width: 250px;
-    border: 1px solid var(--secondary-color);
+    height: 40px;
+    width: 220px;
+    border: 1px solid #E5E7EB;
     border-radius: 3px;
     padding: 8px;
-    font-size: 1rem;
+    font-size: .9rem;
+}
+
+input:required {
+    border: 1px solid #000;
+}
+
+input:focus {
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 3px 5px #E5E7EB;
+}
+
+input:valid {
+    background: url(../assets/icons/check-circle-solid.svg) no-repeat;
+    background-size: 18px;
+    background-position: 97% 50%;
+}
+
+input:placeholder-shown {
+    background: none;
 }
 
 button {
     width: 200px;
     height: 40px;
     font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
     background: var(--primary-color);
     border: 2px solid var(--primary-color);
     border-radius: 3px;
     margin: 20px 0 10px;
+}
+
+button:hover {
+    border: none;
+    background-color: var(--secondary-color);
 }
