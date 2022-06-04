@@ -206,7 +206,7 @@ input:invalid:not(:placeholder-shown){
 }
 
 .feedback {
-    font-size: .8rem;
+    font-size: .7rem;
     max-height: 0;
     transition: 0.28s;
     overflow: hidden;
@@ -217,7 +217,7 @@ input:invalid:not(:placeholder-shown){
 }
 
 input:invalid:not(:placeholder-shown) ~ .feedback {
-    font-size: .8rem;
+    font-size: .7rem;
     max-height: 1rem;
     color: red;
     overflow: visible;

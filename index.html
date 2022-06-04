@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -104,7 +105,7 @@
                         src="./assets/icons/exclamation-triangle-solid.svg"
                         alt=""
                     />
-                    Please enter a valid phone number
+                    Please enter a valid CI phone number
                     </div>
                 </div>
                 </div>
@@ -116,6 +117,7 @@
                     name="password"
                     id="password"
                     placeholder=" "
+                    pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
                     required
                     />
                 </div>
