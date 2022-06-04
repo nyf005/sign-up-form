@@ -27,7 +27,7 @@
 
 body {
     font-family: Poppins, sans-serif;
-    font-size: clamp(14px, 1.1rem, 1.3rem);
+    font-size: clamp(12px, 1rem, 1.3rem);
     font-weight: normal;
     line-height: 1.7rem;
 }
@@ -132,12 +132,24 @@ form {
     margin: 40px 0 0;
     padding: 30px 40px;
     font-size: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px #ccc;
+    display: flex;
+    gap: 40px;
+}
+
+#form-fields {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 25px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px #ccc;
+    gap: 15px;
+}
+
+#form-infos {
+    font-size: .8rem;
+    color: #ccc;
+    display: flex;
+    align-items: flex-end;
 }
 
 .form-row {
@@ -206,6 +218,7 @@ input:invalid:not(:placeholder-shown){
 
 input:invalid:not(:placeholder-shown) ~ .feedback {
     font-size: .8rem;
+    max-height: 1rem;
     color: red;
     overflow: visible;
 }

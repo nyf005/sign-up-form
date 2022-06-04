@@ -30,7 +30,7 @@
           <p>
             Helping create a sustainable earth is important to each and every
             person on the planet. There are many reasons going green is
-            important but the most important for us comes down to this quote:
+            important but the most important for us comes down to this quote :
           </p>
           <figure>
             <blockquote>
@@ -47,94 +47,108 @@
           </p>
         </div>
         <form action="#" method="post" id="registerForm">
-          <h3>Let's create a sustainable Earth.</h3>
-          <!--  <p>Field with <sup>*</sup> are required.</p> -->
-          <div class="form-row">
-            <div class="form-element">
-              <label for="firstname">First Name <span>*</span> </label>
-              <input
-                type="text"
-                name="firstname"
-                id="firstname"
-                placeholder="John"
-                required
-              />
+            <div id="form-fields">
+                <h3>Let's create a sustainable Earth.</h3>
+                <!--  <p>Field with <sup>*</sup> are required.</p> -->
+                <div class="form-row">
+                <div class="form-element">
+                    <label for="firstname">First Name <span>*</span> </label>
+                    <input
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    placeholder="John"
+                    required
+                    />
+                </div>
+                <div class="form-element">
+                    <label for="lastname">Last Name <span>*</span></label>
+                    <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    placeholder="Doe"
+                    required
+                    />
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-element">
+                    <label for="email">E-mail <span>*</span></label>
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="john-doe@email.com"
+                    required
+                    />
+                    <div class="feedback">
+                    <img
+                        src="./assets/icons/exclamation-triangle-solid.svg"
+                        alt=""
+                    />
+                    Please enter a valid email address
+                    </div>
+                </div>
+                <div class="form-element">
+                    <label for="phone">Phone Number </label>
+                    <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="00-00-00-00-00"
+                    pattern="^(?:0)[157](?:[\.\-\s]?\d\d){4}$"
+                    />
+                    <div class="feedback">
+                    <img
+                        src="./assets/icons/exclamation-triangle-solid.svg"
+                        alt=""
+                    />
+                    Please enter a valid phone number
+                    </div>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-element">
+                    <label for="password">Password <span>*</span></label
+                    ><input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder=" "
+                    required
+                    />
+                </div>
+                <div class="form-element">
+                    <label for="confirm-password"
+                    >Confirm Password <span>*</span></label
+                    ><input
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                    placeholder=" "
+                    required
+                    />
+                    <div class="feedback">
+                    <img
+                        src="./assets/icons/exclamation-triangle-solid.svg"
+                        alt=""
+                    />
+                    Passwords do not match
+                    </div>
+                </div>
+                </div>
             </div>
-            <div class="form-element">
-              <label for="lastname">Last Name <span>*</span></label>
-              <input
-                type="text"
-                name="lastname"
-                id="lastname"
-                placeholder="Doe"
-                required
-              />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-element">
-              <label for="email">E-mail <span>*</span></label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="john-doe@email.com"
-                required
-              />
-              <div class="feedback">
-                <img
-                  src="./assets/icons/exclamation-triangle-solid.svg"
-                  alt=""
-                />
-                Please enter a valid email address
-              </div>
-            </div>
-            <div class="form-element">
-              <label for="phone">Phone Number </label>
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="(+225) 00-00-00-00-00"
-              />
-              <div class="feedback">
-                <img
-                  src="./assets/icons/exclamation-triangle-solid.svg"
-                  alt=""
-                />
-                Please enter a valid phone number
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-element">
-              <label for="password">Password <span>*</span></label
-              ><input
-                type="password"
-                name="password"
-                id="password"
-                placeholder=" "
-                required
-              />
-            </div>
-            <div class="form-element">
-              <label for="confirm-password"
-                >Confirm Password <span>*</span></label
-              ><input
-                type="password"
-                name="confirm-password"
-                id="confirm-password"
-                placeholder=" "
-                required
-              />
-              <div class="feedback">
-                <img
-                  src="./assets/icons/exclamation-triangle-solid.svg"
-                  alt=""
-                />
-                Passwords do not match
-              </div>
-            </div>
+            <div id="form-infos">
+                <p>
+                    <ul>
+                        <li>At least 8 characters</li>
+                        <li>One lowercase character</li>
+                        <li>One uppercase character</li>
+                        <li>One number</li>
+                        <li>One special character</li>
+                    </ul>
+                </p>
           </div>
         </form>
         <div id="login">
