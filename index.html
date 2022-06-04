@@ -8,6 +8,111 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>Form</h1>
+    <div class="container">
+      <div id="left">
+        <div id="banner">
+          <img src="./assets/img/climatelog.png" alt="climatelogo" />
+          <div>
+            <h1>Go Green</h1>
+            <p>Save the planet</p>
+          </div>
+        </div>
+        <div id="credit">
+          <p>
+            Photo by
+            <a href="https://unsplash.com/photos/4rDCa5hBlCs">Casey Horner</a>
+            on <a href="https://unsplash.com">Unsplash</a>
+          </p>
+        </div>
+      </div>
+      <div id="right">
+        <div id="intro">
+          <p>
+            Helping create a sustainable earth is important to each and every
+            person on the planet. There are many reasons going green is
+            important but the most important for us comes down to this quote:
+          </p>
+          <figure>
+            <blockquote>
+              <p>
+                We do not inherit the Earth from our ancestors, we borrow it
+                from our children.
+              </p>
+            </blockquote>
+            <figcaption>– David Brower</figcaption>
+          </figure>
+          <p>
+            Whatever your reason, it is not as important as the action, so do
+            your part and <strong>register</strong>.
+          </p>
+        </div>
+        <form action="#" method="post" id="registerForm">
+          <h3>Let's create a sustainable Earth.</h3>
+          <div class="form-row">
+            <div class="form-element">
+              <label for="firstname">First Name </label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="John"
+                required
+              />
+            </div>
+            <div class="form-element">
+              <label for="lastname">Last Name </label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Doe"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-element">
+              <label for="email">E-mail </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="john-doe@email.com"
+                required
+              />
+            </div>
+            <div class="form-element">
+              <label for="phone">Phone Number </label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="(+225) 00 00 00 00 00"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-element">
+              <label for="password">Password</label
+              ><input type="password" name="password" id="password" required />
+            </div>
+            <div class="form-element">
+              <label for="confirm-password">Confirm Password</label
+              ><input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+          </div>
+        </form>
+        <div id="login">
+          <button type="submit" form="registerForm">Create Account</button>
+          <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
