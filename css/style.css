@@ -150,6 +150,7 @@ form {
     color: #ccc;
     display: flex;
     align-items: flex-end;
+    visibility: hidden;
 }
 
 .form-row {
@@ -199,6 +200,7 @@ input:valid:not(:placeholder-shown) {
     background: url(../assets/icons/check-circle-solid.svg) no-repeat;
     background-size: 18px;
     background-position: 97% 50%;
+    border: 1px solid var(--primary-color);
 }
 
 input:invalid:not(:placeholder-shown){
