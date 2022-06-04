@@ -135,7 +135,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     background-color: #fff;
     box-shadow: 0 2px 4px #ccc;
 }
@@ -167,7 +167,7 @@ input, button {
 
 input {
     height: 40px;
-    width: 220px;
+    width: 250px;
     border: 1px solid #E5E7EB;
     border-radius: 3px;
     padding: 8px;
@@ -183,14 +183,31 @@ input:focus {
     box-shadow: 0 3px 5px #E5E7EB;
 }
 
-input:valid {
+input:valid:not(:placeholder-shown) {
     background: url(../assets/icons/check-circle-solid.svg) no-repeat;
     background-size: 18px;
     background-position: 97% 50%;
 }
 
-input:placeholder-shown {
-    background: none;
+input:invalid:not(:placeholder-shown){
+    border: 1px solid red;
+}
+
+.feedback {
+    font-size: .8rem;
+    max-height: 0;
+    transition: 0.28s;
+    overflow: hidden;
+}
+
+.feedback img {
+    width: .8rem;
+}
+
+input:invalid:not(:placeholder-shown) ~ .feedback {
+    font-size: .8rem;
+    color: red;
+    overflow: visible;
 }
 
 button {

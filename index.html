@@ -81,6 +81,13 @@
                 placeholder="john-doe@email.com"
                 required
               />
+              <div class="feedback">
+                <img
+                  src="./assets/icons/exclamation-triangle-solid.svg"
+                  alt=""
+                />
+                Please enter a valid email address
+              </div>
             </div>
             <div class="form-element">
               <label for="phone">Phone Number </label>
@@ -90,12 +97,25 @@
                 id="phone"
                 placeholder="(+225) 00-00-00-00-00"
               />
+              <div class="feedback">
+                <img
+                  src="./assets/icons/exclamation-triangle-solid.svg"
+                  alt=""
+                />
+                Please enter a valid phone number
+              </div>
             </div>
           </div>
           <div class="form-row">
             <div class="form-element">
               <label for="password">Password <span>*</span></label
-              ><input type="password" name="password" id="password" required />
+              ><input
+                type="password"
+                name="password"
+                id="password"
+                placeholder=" "
+                required
+              />
             </div>
             <div class="form-element">
               <label for="confirm-password"
@@ -104,8 +124,16 @@
                 type="password"
                 name="confirm-password"
                 id="confirm-password"
+                placeholder=" "
                 required
               />
+              <div class="feedback">
+                <img
+                  src="./assets/icons/exclamation-triangle-solid.svg"
+                  alt=""
+                />
+                Passwords do not match
+              </div>
             </div>
           </div>
         </form>
