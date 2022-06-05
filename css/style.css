@@ -301,4 +301,8 @@ button:hover {
     #intro > p {
         display: none;
     }
+
+    #login {
+        margin: 10px auto;
+    }
 }
