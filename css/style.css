@@ -60,20 +60,20 @@ a:hover {
     display: flex;
     justify-content: center; 
     align-items: center;
+    color: #fff;
 }
 
 #banner {
     height: 15vh;
     position: absolute;
     top: 15%;
-    color: #fff;
+    
 }
 
 #credit {
     position: absolute;
     bottom: 0;
     height: 5vh;
-    color: #fff;
 }
 
 #banner img {
@@ -252,20 +252,29 @@ button:hover {
         position: relative;
     }
 
+    #left {
+        background-attachment: fixed;
+    }
+
     #banner {
         top: 0;
     }
+
+    /* #credit {
+        top: 15vh;
+    } */
     
     #right {
         position: absolute;
-        height: calc(100vh - 20vh);
+        height: 80vh;
         top: 15vh;
-        background-color: rgba(238, 238, 238, .8);
+        background: rgba(0, 0, 0, .8);
     }
 
-    form {
-        margin: 20px 0 0;
+    #intro, #login p {
+        color: #fff;
     }
+
 
     .form-row {
         flex-direction: column;
