@@ -25,12 +25,13 @@ const incorrectColor = "#ccc";
 
 // Show requirements when password has focus
 passwordInput.addEventListener("focus", () => {
-  password_requirements.style.visibility = "visible";
+  password_requirements.style.display = "block";
+  password_requirements.classList.remove("hidden");
 });
 
 // Hide requirements when password loses focus
 passwordInput.addEventListener("blur", () => {
-  password_requirements.style.visibility = "hidden";
+  password_requirements.style.display = "none";
 });
 
 // Highlight requirement when pattern is match
