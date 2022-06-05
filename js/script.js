@@ -2,13 +2,23 @@ let password;
 
 const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirm-password");
-const password_requirements = document.getElementById("form-infos");
+const password_requirements = document.getElementById("password-requirements");
 
-const eightCharsMatch = document.querySelector("#form-infos li:nth-child(1)");
-const lowercaseMatch = document.querySelector("#form-infos li:nth-child(2)");
-const uppercaseMatch = document.querySelector("#form-infos li:nth-child(3)");
-const numberMatch = document.querySelector("#form-infos li:nth-child(4)");
-const specialCharMatch = document.querySelector("#form-infos li:nth-child(5)");
+const eightCharsMatch = document.querySelector(
+  "#password-requirements li:nth-child(1)"
+);
+const lowercaseMatch = document.querySelector(
+  "#password-requirements li:nth-child(2)"
+);
+const uppercaseMatch = document.querySelector(
+  "#password-requirements li:nth-child(3)"
+);
+const numberMatch = document.querySelector(
+  "#password-requirements li:nth-child(4)"
+);
+const specialCharMatch = document.querySelector(
+  "#password-requirements li:nth-child(5)"
+);
 
 const correctColor = "#5eb458";
 const incorrectColor = "#ccc";
