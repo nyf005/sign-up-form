@@ -241,3 +241,37 @@ button:hover {
     border: none;
     background-color: var(--secondary-color);
 }
+
+@media (max-width: 768px) {
+    :root {
+        --left-size: 100vw;
+        --right-size: 100vw;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    #banner {
+        top: 0;
+    }
+    
+    #right {
+        position: absolute;
+        height: calc(100vh - 20vh);
+        top: 15vh;
+        background-color: rgba(238, 238, 238, .8);
+    }
+
+    form {
+        margin: 20px 0 0;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    #intro > p {
+        display: none;
+    }
+}

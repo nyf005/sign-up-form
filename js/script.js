@@ -13,14 +13,17 @@ const specialCharMatch = document.querySelector("#form-infos li:nth-child(5)");
 const correctColor = "#5eb458";
 const incorrectColor = "#ccc";
 
+// Show requirements when password has focus
 passwordInput.addEventListener("focus", () => {
   password_requirements.style.visibility = "visible";
 });
 
+// Hide requirements when password loses focus
 passwordInput.addEventListener("blur", () => {
   password_requirements.style.visibility = "hidden";
 });
 
+// Highlight requirement when pattern is match
 passwordInput.addEventListener("keyup", (e) => {
   password = e.target.value;
 
@@ -32,6 +35,7 @@ passwordInput.addEventListener("keyup", (e) => {
 });
 
 confirmPasswordInput.addEventListener("keyup", () => {
+  // We use setCustomValidity to validate with ("") or invalidate with anything in brackets like ("Invalid")
   confirmPasswordInput.value == password
     ? confirmPasswordInput.setCustomValidity("")
     : confirmPasswordInput.setCustomValidity("Invalid");
