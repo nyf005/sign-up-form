@@ -55,7 +55,8 @@ a:hover {
     color: var(--secondary-color);
 }
 
-#banner, #credit {
+#banner, 
+#credit {
     width: 100%;
     background: rgba(0, 0, 0, .5);
     display: flex;
@@ -94,7 +95,8 @@ a:hover {
     text-decoration: none;
 }
 
-#intro, #login {
+#intro, 
+#login {
     padding: 10px 40px;
 }
 
@@ -219,14 +221,39 @@ input:invalid:not(:placeholder-shown) ~ .feedback {
     overflow: visible;
 }
 
-#password-requirements{
-    font-size: .75rem;
-    color: #ccc;
+/* Show/Hide phone requirement when phone has/loses focus */
+
+input[type=tel]:focus:invalid:not(:placeholder-shown) ~ #phone-requirement {
+    display: block;
+}
+
+input[type=tel]:focus:valid:not(:placeholder-shown) ~ #phone-requirement {
+    display: none;
+}
+
+
+#password-requirements, 
+#phone-requirement {
     max-height: 0;
     position: absolute;
+    display: none;
+}
+
+#password-requirements {
+    font-size: .75rem;
+    color: #ccc; 
     left: 580px;
     top: 47%;
-    display: none;
+    
+}
+
+#phone-requirement {
+    width: 25%;
+    font-size: .9rem;
+    color: var(--secondary-color);
+    line-height: 1.3rem;
+    left: 570px;
+    top: 51%;
 }
 
 button {

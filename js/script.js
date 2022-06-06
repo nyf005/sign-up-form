@@ -23,13 +23,11 @@ const specialCharMatch = document.querySelector(
 const correctColor = "#5eb458";
 const incorrectColor = "#ccc";
 
-// Show requirements when password has focus
+// Show/Hide requirements when password has/loses focus
 passwordInput.addEventListener("focus", () => {
   password_requirements.style.display = "block";
-  password_requirements.classList.remove("hidden");
 });
 
-// Hide requirements when password loses focus
 passwordInput.addEventListener("blur", () => {
   password_requirements.style.display = "none";
 });
