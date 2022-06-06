@@ -2,7 +2,7 @@
 
 ## Project description
 
-A simply form to practice :
+A simply HTML Sign up page to practice :
 
 - Form Basics
 - Form Validation
