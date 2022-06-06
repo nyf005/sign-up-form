@@ -10,6 +10,7 @@ A simply HTML Sign up page to practice :
 - Advanced CSS properties
 - CSS functions
 - Positioning
+- Regular Expressions
 
 ## Links
 
@@ -26,4 +27,4 @@ A simply HTML Sign up page to practice :
 ## Screenshots
 
 ![Full size screenshot](https://user-images.githubusercontent.com/32721495/172091658-3c23e2ab-7f50-449d-8ad8-2133e1ed0e4e.png)
-![Responsive screenshot](https://user-images.githubusercontent.com/32721495/172092321-81d62c8c-6bf7-46dd-b74a-fd4697a3fc6f.jpg)
+![Responsive screenshot](https://user-images.githubusercontent.com/32721495/172170542-06c79bf2-5229-4e9d-b6c9-dedd214309e9.png)
