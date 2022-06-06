@@ -296,8 +296,13 @@ button:hover {
      #password-requirements {
         position: relative;
         min-height: 120px;
-        left: 25%;
-        bottom: 0;
+        margin: 10px 0;
+        left: 0;
+        order: 2;
+    }
+
+    #password-requirements li {
+        list-style: inside;
     }
 
     .form-row {
