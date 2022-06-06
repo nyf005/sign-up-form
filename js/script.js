@@ -49,7 +49,7 @@ confirmPasswordInput.addEventListener("keyup", () => {
   // We use setCustomValidity to validate with ("") or invalidate with anything in brackets like ("Invalid")
   confirmPasswordInput.value == password
     ? confirmPasswordInput.setCustomValidity("")
-    : confirmPasswordInput.setCustomValidity("Invalid");
+    : confirmPasswordInput.setCustomValidity("Passwords do not match");
 });
 
 function hightlightRequirement(passwordValue, requirement, pattern) {
