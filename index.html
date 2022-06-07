@@ -59,8 +59,16 @@
                   name="firstname"
                   id="firstname"
                   placeholder="John"
+                  pattern="(^[a-zA-Z][a-zA-Z]{0,}([.'-]?[a-zA-Z ])+$)"
                   required
                 />
+                <div class="feedback">
+                  <img
+                    src="./assets/icons/exclamation-triangle-solid.svg"
+                    alt=""
+                  />
+                  Please enter a valid firstname
+                </div>
               </div>
               <div class="form-element">
                 <label for="lastname">Last Name <span>*</span></label>
@@ -69,8 +77,16 @@
                   name="lastname"
                   id="lastname"
                   placeholder="Doe"
+                  pattern="(^[a-zA-Z][a-zA-Z]{0,}([.'-]?[a-zA-Z ])+$)"
                   required
                 />
+                <div class="feedback">
+                  <img
+                    src="./assets/icons/exclamation-triangle-solid.svg"
+                    alt=""
+                  />
+                  Please enter a valid lastname
+                </div>
               </div>
             </div>
             <div class="form-row">
