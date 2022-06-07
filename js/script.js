@@ -2,7 +2,6 @@ let password;
 
 const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirm-password");
-const password_requirements = document.getElementById("password-requirements");
 
 const eightCharsMatch = document.querySelector(
   "#password-requirements li:nth-child(1)"
@@ -19,18 +18,6 @@ const numberMatch = document.querySelector(
 const specialCharMatch = document.querySelector(
   "#password-requirements li:nth-child(5)"
 );
-
-const correctColor = "#5eb458";
-const incorrectColor = "#ccc";
-
-// Show/Hide requirements when password has/loses focus
-passwordInput.addEventListener("focus", () => {
-  password_requirements.style.display = "block";
-});
-
-passwordInput.addEventListener("blur", () => {
-  password_requirements.style.display = "none";
-});
 
 // Highlight requirement when pattern is match
 passwordInput.addEventListener("keyup", (e) => {
@@ -52,6 +39,6 @@ confirmPasswordInput.addEventListener("keyup", () => {
 
 function hightlightRequirement(passwordValue, requirement, pattern) {
   passwordValue.match(pattern)
-    ? (requirement.style.color = correctColor)
-    : (requirement.style.color = incorrectColor);
+    ? (requirement.style.color = "#5eb458")
+    : (requirement.style.color = "#ccc");
 }
