@@ -31,7 +31,8 @@ passwordInput.addEventListener("keyup", (e) => {
 });
 
 confirmPasswordInput.addEventListener("keyup", () => {
-  // We use setCustomValidity to validate with ("") or invalidate with anything in brackets like ("Invalid")
+  //  We use setCustomValidity to validate with ("")
+  // or invalidate with any text in brackets like ("Passwords do not match")
   confirmPasswordInput.value == password
     ? confirmPasswordInput.setCustomValidity("")
     : confirmPasswordInput.setCustomValidity("Passwords do not match");

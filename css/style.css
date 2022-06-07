@@ -222,7 +222,6 @@ input:invalid:not(:placeholder-shown) ~ .feedback {
 }
 
 /* Show/Hide requirements when phone or password has/loses focus */
-
 #phone:focus ~ #phone-requirement,
 #password:focus ~ #password-requirements {
     display: block;
@@ -241,7 +240,6 @@ input:invalid:not(:placeholder-shown) ~ .feedback {
     font-size: .8rem;
     position: absolute;
     left: 65%;
-
 }
 
 #password-requirements {
@@ -288,7 +286,6 @@ button:hover {
         background-attachment: fixed;
     }
 
-
     #banner {
         top: 0;
         /* The code below will make the banner stick to the top and the content scrolling will be hide under it */
@@ -311,6 +308,10 @@ button:hover {
         color: #fff;
     }
 
+    #intro > p {
+        display: none;
+    }
+
     form {
         flex-direction: column;
         gap: 10px;
@@ -320,11 +321,27 @@ button:hover {
         text-align: center;
     }
 
-     #password-requirements {
+    .form-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #phone-requirement, 
+    #password-requirements {
         position: relative;
-        min-height: 120px;
         margin: 10px 0;
         left: 0;
+    }
+
+    #phone-requirement {
+        width: 240px; 
+        min-height: 20px;
+    }
+
+     #password-requirements {
+        width: 100%;
+        min-height: 120px;
         order: 2;
     }
 
@@ -332,15 +349,6 @@ button:hover {
         list-style: inside;
     }
 
-    .form-row {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #intro > p {
-        display: none;
-    }
 
     #login {
         margin: 0 auto;
