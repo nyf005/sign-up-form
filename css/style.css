@@ -239,19 +239,20 @@ input:invalid:not(:placeholder-shown) ~ .feedback {
     width: 25%;
     font-size: .8rem;
     position: absolute;
+    
 }
 
 #password-requirements {
     color: #ccc; 
     top: 46%;
-    left: 67%;
+    left: 580px;
 }
 
 #phone-requirement {
     color: var(--secondary-color);
     line-height: 1.3rem;
     top: 50%;
-    left: 65%;
+    left: 565px;
 }
 
 button {
